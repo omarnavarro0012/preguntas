@@ -5,20 +5,31 @@ public class Pregunta
     
     public Pregunta()
     {
-        
+       texto="";
+       respuesta="";
     }
     
     public void asingarTexto(String pregunta)
-    {}
+    {
+        texto=pregunta;        
+    }
     
     public void asiganarRespuesta(String Respuesta)
-    {}
+    {
+        respuesta=Respuesta;
+    }
     
     public boolean checarRespuesta(String respuestausuario)
     {
-        return true;
+        if(respuestausuario==respuesta)
+        {
+            return true;
+        }
+        return false;
     }
     
     public void imprimete()
-    {}
+    {
+        System.out.print("no se que respuesta imprimir");
+    }
 }
